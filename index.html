@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chevira Fiorenza | Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom Font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-[#F0F4F8] via-white to-[#FDFBF7] text-slate-800 selection:bg-blue-200">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-5">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <div class="font-bold text-xl tracking-tight text-blue-900 cursor-pointer" onclick="scrollToSection('home')">
+                C.Fiorenza<span class="text-blue-500">.</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <button onclick="scrollToSection('about')" class="hover:text-blue-600 transition-colors duration-200">About</button>
+                <button onclick="scrollToSection('experience')" class="hover:text-blue-600 transition-colors duration-200">Experience</button>
+                <button onclick="scrollToSection('education')" class="hover:text-blue-600 transition-colors duration-200">Education</button>
+                <button onclick="scrollToSection('portfolio')" class="hover:text-blue-600 transition-colors duration-200">Portfolio</button>
+            </div>
+            <button onclick="scrollToSection('contact')" class="px-5 py-2 rounded-full bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition-all shadow-md hover:shadow-lg">
+                Let's Talk
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-12">
+        <!-- HERO SECTION -->
+        <section id="home" class="max-w-6xl mx-auto px-6 pt-12 pb-20 md:pt-24 md:pb-32 flex flex-col-reverse md:flex-row items-center gap-12">
+            <div class="flex-1 space-y-6 text-center md:text-left">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-sm font-semibold mb-2 animate-pulse">
+                    🚀 Open to Collaborations & Opportunities
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight">
+                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">Chevira Fiorenza</span>
+                </h1>
+                <p class="text-xl md:text-2xl font-medium text-slate-600">
+                    Student Ambassador 2026 | AI Enthusiast | Creative Digital Innovator
+                </p>
+                <p class="text-slate-500 max-w-lg mx-auto md:mx-0 text-base leading-relaxed">
+                    Transforming ideas into strategic visual solutions. Blending creative design, digital marketing, and AI workflows to build impactful digital presences.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start pt-4">
+                    <button class="flex items-center gap-2 px-6 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 hover:-translate-y-1 transition-all shadow-lg shadow-blue-200">
+                        <i data-lucide="download" class="w-5 h-5"></i> Download CV
+                    </button>
+                    
+                    <div class="flex flex-wrap justify-center items-center gap-3">
+                        <a href="https://www.linkedin.com/in/chevira-fiorenza-yuvisena" target="_blank" class="p-3 rounded-full bg-white border border-slate-100 text-slate-500 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 hover:text-blue-700" title="LinkedIn"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                        <a href="https://www.instagram.com/cheviorenza/" target="_blank" class="p-3 rounded-full bg-white border border-slate-100 text-slate-500 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 hover:text-pink-600" title="Instagram"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="https://www.tiktok.com/@checeviorenza" target="_blank" class="p-3 rounded-full bg-white border border-slate-100 text-slate-500 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 hover:text-black" title="TikTok">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M19.589 6.686a4.793 4.793 0 0 1-3.97-1.539 4.99 4.99 0 0 1-1.534-3.524H10.07v14.4c0 1.956-1.59 3.543-3.546 3.543s-3.545-1.587-3.545-3.543 1.59-3.544 3.545-3.544c.4 0 .783.07 1.144.195V8.583a7.56 7.56 0 0 0-1.144-.087c-4.172 0-7.558 3.385-7.558 7.557s3.386 7.558 7.558 7.558 7.558-3.386 7.558-7.558V9.351c2.193 1.588 4.887 2.457 7.763 2.502V7.83a8.814 8.814 0 0 0-2.256-.144z"/></svg>
+                        </a>
+                        <a href="https://www.behance.net/chevirafiorenza" target="_blank" class="p-3 rounded-full bg-white border border-slate-100 text-slate-500 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 hover:text-blue-600" title="Behance">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M8.5 7.5h-4v9h4c1.7 0 3-1.1 3-2.5 0-1.1-.7-2-1.8-2.3 1-.4 1.6-1.3 1.6-2.4C11.3 8.3 10.1 7.5 8.5 7.5zm-1.5 3.5h-1v-2h1c.6 0 1 .4 1 1s-.4 1-1 1zm.5 4h-1.5v-2.5h1.5c.8 0 1.2.5 1.2 1.2s-.4 1.3-1.2 1.3zm8-5h-3v1.5h3v-1.5zm.5 3.5h-3.5v1.5h3c.2 0 .5-.2.5-.5v-1h-4v4h4.5c1.4 0 2.5-1.1 2.5-2.5s-1.1-2.5-2.5-2.5z"/></svg>
+                        </a>
+                        <a href="https://dapoernayas.my.canva.site/portfolio-cheviorenza" target="_blank" class="p-3 rounded-full bg-white border border-slate-100 text-slate-500 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 hover:text-purple-600" title="Canva Portfolio"><i data-lucide="external-link" class="w-5 h-5"></i></a>
+                        <a href="mailto:cheviorenza@gmail.com" class="p-3 rounded-full bg-white border border-slate-100 text-slate-500 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 hover:text-red-500" title="Email"><i data-lucide="mail" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Image Area -->
+            <div class="flex-1 flex justify-center md:justify-end relative">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-2 bg-gradient-to-tr from-blue-100 to-orange-50 shadow-2xl">
+                    <div class="w-full h-full rounded-full overflow-hidden bg-white relative group border-4 border-white flex items-center justify-center">
+                        
+                        <img id="profileImg" src="https://i.ibb.co.com/DPYjtZvG/profpic.jpg" alt="Chevira Fiorenza" class="w-full h-full object-cover" />
+                        
+                        <div id="emptyState" class="hidden flex flex-col items-center text-slate-400">
+                            <i data-lucide="image" class="w-12 h-12 mb-2 opacity-50"></i>
+                            <span class="text-sm">Belum Ada Foto</span>
+                        </div>
+                        
+                        <!-- Upload Overlay -->
+                        <label class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer">
+                            <i data-lucide="camera" class="w-6 h-6 mb-2"></i>
+                            <span class="text-xs font-medium">Upload Photo</span>
+                            <input type="file" id="imageUpload" accept="image/*" class="hidden" />
+                        </label>
+                    </div>
+                    <!-- Decorative elements -->
+                    <div class="absolute top-4 -right-4 bg-white p-3 rounded-2xl shadow-lg border border-slate-100 animate-bounce">
+                        <i data-lucide="sparkles" class="w-6 h-6 text-amber-400"></i>
+                    </div>
+                    <div class="absolute -bottom-4 left-10 bg-white px-4 py-2 rounded-full shadow-lg border border-slate-100 text-sm font-bold text-blue-600">
+                        Gen-Z Creator
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="max-w-6xl mx-auto px-6 py-20">
+            <div class="bg-white/60 backdrop-blur-xl border border-white rounded-3xl p-8 md:p-12 shadow-xl shadow-slate-100/50">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                            <i data-lucide="sparkles" class="text-blue-500 w-8 h-8"></i> About Me
+                        </h2>
+                        <p class="text-slate-600 leading-relaxed mb-4">
+                            Saya adalah seorang Desainer Grafis dan Spesialis Media Sosial yang berorientasi pada detail dengan ketertarikan mendalam pada <strong>inovasi digital dan teknologi AI</strong>. 
+                        </p>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            Dengan pengalaman dalam mengelola kampanye visual, strategi konten, dan dukungan sistem berbasis web, saya fokus pada penggabungan kreativitas manusia dengan efisiensi <em>AI-driven workflows</em>. Saya juga aktif dalam public speaking, pengembangan merek, dan ekosistem tech-startup.
+                        </p>
+                        <div class="flex flex-wrap items-center gap-4 text-sm font-medium text-slate-500">
+                            <div class="flex items-center gap-1"><i data-lucide="award" class="text-blue-500 w-4 h-4"></i> Certified Pro</div>
+                            <div class="flex items-center gap-1"><i data-lucide="code" class="text-blue-500 w-4 h-4"></i> Tech Enthusiast</div>
+                            <div class="flex items-center gap-1"><i data-lucide="pen-tool" class="text-blue-500 w-4 h-4"></i> Creative Mind</div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-semibold text-slate-800">Core Expertise</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100 hover:bg-blue-600 hover:text-white transition-colors">Desain Grafis</span>
+                            <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100 hover:bg-blue-600 hover:text-white transition-colors">Pemasaran Digital</span>
+                            <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100 hover:bg-blue-600 hover:text-white transition-colors">Prompt Engineering</span>
+                            <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100 hover:bg-blue-600 hover:text-white transition-colors">Manajemen Media Sosial</span>
+                            <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100 hover:bg-blue-600 hover:text-white transition-colors">Adobe Creative Suite</span>
+                            <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100 hover:bg-blue-600 hover:text-white transition-colors">Canva</span>
+                            <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100 hover:bg-blue-600 hover:text-white transition-colors">Video Editing</span>
+                            <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100 hover:bg-blue-600 hover:text-white transition-colors">Web App Support</span>
+                            <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100 hover:bg-blue-600 hover:text-white transition-colors">Public Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="max-w-4xl mx-auto px-6 py-20">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Professional Experience</h2>
+                <div class="w-20 h-1.5 bg-blue-500 rounded-full mx-auto"></div>
+            </div>
+
+            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-200 before:to-transparent">
+                
+                <!-- Exp 1 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-blue-100 text-blue-600 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i data-lucide="briefcase" class="w-4 h-4"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex flex-col mb-2">
+                            <span class="text-blue-600 font-bold">Snaza Karate Academy</span>
+                            <h3 class="text-lg font-bold text-slate-800">Branding & Digital Project Lead</h3>
+                        </div>
+                        <div class="text-sm text-slate-400 mb-4 flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-slate-300"></div> 2024 - Sekarang
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">Mengembangkan visual media sosial, landing page, sistem absensi berbasis web, dan platform e-learning. Menciptakan identitas merek kohesif termasuk desain maskot dan merchandise.</p>
+                    </div>
+                </div>
+
+                <!-- Exp 2 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-blue-100 text-blue-600 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i data-lucide="briefcase" class="w-4 h-4"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex flex-col mb-2">
+                            <span class="text-blue-600 font-bold">Learning Acting</span>
+                            <h3 class="text-lg font-bold text-slate-800">Social Media Content Creator</h3>
+                        </div>
+                        <div class="text-sm text-slate-400 mb-4 flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-slate-300"></div> Jan 2024 - Sekarang
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">Membuat konten media sosial, promosi kelas, dan dokumentasi acara untuk meningkatkan keterlibatan dan kesadaran merek.</p>
+                    </div>
+                </div>
+
+                <!-- Exp 3 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-blue-100 text-blue-600 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i data-lucide="briefcase" class="w-4 h-4"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex flex-col mb-2">
+                            <span class="text-blue-600 font-bold">Ziyada Sport Gears</span>
+                            <h3 class="text-lg font-bold text-slate-800">Social Media Designer</h3>
+                        </div>
+                        <div class="text-sm text-slate-400 mb-4 flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-slate-300"></div> 2024 - Jan 2026
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">Mengelola konten pemasaran digital, mendesain materi promosi, dan memproduksi visual produk untuk kampanye media sosial berbasis data.</p>
+                    </div>
+                </div>
+
+                <!-- Exp 4 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-blue-100 text-blue-600 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i data-lucide="briefcase" class="w-4 h-4"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex flex-col mb-2">
+                            <span class="text-blue-600 font-bold">Mandarin Ways</span>
+                            <h3 class="text-lg font-bold text-slate-800">Freelance Video Editor</h3>
+                        </div>
+                        <div class="text-sm text-slate-400 mb-4 flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-slate-300"></div> Okt 2025 - Jan 2026
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">Memproduksi konten video promosi kreatif dan berorientasi storytelling untuk program pembelajaran bahasa Mandarin internasional.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EDUCATION & CERTIFICATIONS -->
+        <section id="education" class="max-w-6xl mx-auto px-6 py-20 bg-slate-50/50 rounded-3xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Education -->
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
+                        <i data-lucide="graduation-cap" class="text-blue-500 w-8 h-8"></i> Education Background
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div class="text-sm font-semibold text-blue-600 mb-1">2024 - Sekarang</div>
+                            <h3 class="text-xl font-bold text-slate-800">S1 Ilmu Komunikasi</h3>
+                            <p class="text-slate-500 mt-1">Universitas Bina Sarana Informatika (UBSI)</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div class="text-sm font-semibold text-slate-400 mb-1">2021 - 2024</div>
+                            <h3 class="text-xl font-bold text-slate-800">Desain Komunikasi Visual (DKV)</h3>
+                            <p class="text-slate-500 mt-1">SMKN 9 Kota Bekasi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
+                        <i data-lucide="award" class="text-amber-500 w-8 h-8"></i> Licenses & Certifications
+                    </h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm flex items-start gap-4 hover:border-blue-200 transition-colors group">
+                            <div class="p-3 rounded-xl bg-blue-50 text-blue-500 shrink-0 group-hover:scale-110 transition-transform"><i data-lucide="sparkles" class="w-5 h-5"></i></div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-800 leading-tight mb-1">Gemini Student Ambassador</h4>
+                                <p class="text-xs font-semibold text-slate-400 mt-2">2026</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm flex items-start gap-4 hover:border-blue-200 transition-colors group">
+                            <div class="p-3 rounded-xl bg-amber-50 text-amber-500 shrink-0 group-hover:scale-110 transition-transform"><i data-lucide="code" class="w-5 h-5"></i></div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-800 leading-tight mb-1">Google AI x Dicoding AI Training</h4>
+                                <p class="text-xs font-semibold text-slate-400 mt-2">2026</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm flex items-start gap-4 hover:border-blue-200 transition-colors group">
+                            <div class="p-3 rounded-xl bg-purple-50 text-purple-500 shrink-0 group-hover:scale-110 transition-transform"><i data-lucide="monitor-play" class="w-5 h-5"></i></div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-800 leading-tight mb-1">AI Upskilling Program</h4>
+                                <p class="text-xs text-slate-500">Remote Skills Academy</p>
+                                <p class="text-xs font-semibold text-slate-400 mt-2">2026</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm flex items-start gap-4 hover:border-blue-200 transition-colors group">
+                            <div class="p-3 rounded-xl bg-green-50 text-green-500 shrink-0 group-hover:scale-110 transition-transform"><i data-lucide="award" class="w-5 h-5"></i></div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-800 leading-tight mb-1">Critical Thinking in AI Era</h4>
+                                <p class="text-xs text-slate-500">HP LIFE</p>
+                                <p class="text-xs font-semibold text-slate-400 mt-2">2026</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm flex items-start gap-4 hover:border-blue-200 transition-colors group">
+                            <div class="p-3 rounded-xl bg-pink-50 text-pink-500 shrink-0 group-hover:scale-110 transition-transform"><i data-lucide="instagram" class="w-5 h-5"></i></div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-800 leading-tight mb-1">Social Media & Influencer Marketing</h4>
+                                <p class="text-xs text-slate-500">MySkill</p>
+                                <p class="text-xs font-semibold text-slate-400 mt-2">2026</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm flex items-start gap-4 hover:border-blue-200 transition-colors group">
+                            <div class="p-3 rounded-xl bg-indigo-50 text-indigo-500 shrink-0 group-hover:scale-110 transition-transform"><i data-lucide="pen-tool" class="w-5 h-5"></i></div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-800 leading-tight mb-1">Professional Competency in VCD</h4>
+                                <p class="text-xs font-semibold text-slate-400 mt-2">2024-2027</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO PREVIEW -->
+        <section id="portfolio" class="max-w-6xl mx-auto px-6 py-20">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">Selected Projects</h2>
+                    <p class="text-slate-500 max-w-lg">Showcase of visual strategies, digital campaigns, and branding projects that create impact.</p>
+                </div>
+                
+                <!-- Filter Tabs -->
+                <div class="flex bg-white rounded-full p-1 border border-slate-200 shadow-sm overflow-x-auto hide-scrollbar">
+                    <button class="tab-btn active px-5 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-all bg-blue-600 text-white shadow-md" data-filter="All">All</button>
+                    <button class="tab-btn px-5 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-all text-slate-500 hover:text-slate-800" data-filter="Campaign">Campaign</button>
+                    <button class="tab-btn px-5 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-all text-slate-500 hover:text-slate-800" data-filter="Branding">Branding</button>
+                    <button class="tab-btn px-5 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-all text-slate-500 hover:text-slate-800" data-filter="Social Media">Social Media</button>
+                </div>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolioGrid">
+                
+                <!-- Item 1 -->
+                <div class="portfolio-item group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300" data-category="Campaign">
+                    <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center">
+                        <img src="https://i.ibb.co.com/8gQJmZGn/Portfolio-Unmask-Your-Feeling.jpg" alt="Unmask Your Feeling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition-colors z-0"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs font-bold text-blue-600 mb-2 uppercase tracking-wider">Campaign</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-1">Unmask Your Feeling</h3>
+                        <p class="text-sm font-medium text-slate-500 mb-3">Mental Health Mini Campaign</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Event activation, landing page, and branding for mental health awareness. Includes interactive web-app.</p>
+                        <a href="https://www.behance.net/gallery/244671269/Portfolio-Campaign-Unmask-Your-Feeling" target="_blank" class="text-blue-600 font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                            View Detail <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="portfolio-item group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300" data-category="Branding">
+                    <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center">
+                        <img src="https://i.ibb.co.com/p6M5LDGm/10.jpg" alt="Snaza Karate Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition-colors z-0"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs font-bold text-blue-600 mb-2 uppercase tracking-wider">Branding</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-1">Snaza Karate Academy</h3>
+                        <p class="text-sm font-medium text-slate-500 mb-3">Brand Identity & Digital Assets</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Complete branding from mascot design to social media visuals and web-based attendance system.</p>
+                        <a href="https://www.behance.net/gallery/249326749/Branding-Martial-Arts-Academy" target="_blank" class="text-blue-600 font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                            View Detail <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="portfolio-item group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300" data-category="Social Media">
+                    <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center">
+                        <img src="https://i.ibb.co.com/WN5zbTNJ/4.jpg" alt="Ziyada Sport Gears" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition-colors z-0"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs font-bold text-blue-600 mb-2 uppercase tracking-wider">Social Media</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-1">Ziyada Sport Gears</h3>
+                        <p class="text-sm font-medium text-slate-500 mb-3">Digital Marketing Visuals</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">High-impact social media design, product photography, and video format optimization for TikTok & Reels.</p>
+                        <a href="https://www.behance.net/gallery/249326843/DIgital-marketing-social-media-model-sport-product" target="_blank" class="text-blue-600 font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                            View Detail <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="portfolio-item group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300" data-category="Campaign">
+                    <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center">
+                        <img src="https://i.ibb.co.com/Dfk9g6tQ/18.jpg" alt="Learning Acting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition-colors z-0"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs font-bold text-blue-600 mb-2 uppercase tracking-wider">Campaign</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-1">Learning Acting</h3>
+                        <p class="text-sm font-medium text-slate-500 mb-3">Class Promo & Event Documentation</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Visual storytelling for acting classes, boosting engagement through curated Instagram feeds.</p>
+                        <a href="https://www.instagram.com/learningacting/" target="_blank" class="text-blue-600 font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                            View Detail <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="portfolio-item group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300" data-category="Social Media">
+                    <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center">
+                        <img src="https://i.ibb.co.com/bgzrbB9F/17.jpg" alt="Mandarin Ways" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition-colors z-0"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs font-bold text-blue-600 mb-2 uppercase tracking-wider">Social Media</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-1">Mandarin Ways</h3>
+                        <p class="text-sm font-medium text-slate-500 mb-3">Promotional Video Editing</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Storytelling-driven video content for language learning program combined with travel experience in Yunnan.</p>
+                        <!-- Hide Detail per request -->
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="portfolio-item group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300" data-category="Branding">
+                    <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center">
+                        <img src="https://i.ibb.co.com/60rXP52S/19.jpg" alt="UMKM Product Catalogues" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition-colors z-0"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs font-bold text-blue-600 mb-2 uppercase tracking-wider">Branding</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-1">UMKM Product Catalogues</h3>
+                        <p class="text-sm font-medium text-slate-500 mb-3">Product Photography & Styling</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Commercial photography and catalogue design focused on lighting, composition, and visual appeal.</p>
+                        <a href="https://www.behance.net/gallery/249326441/UMKM-Branding-Design-Social-Media-Website-Builder" target="_blank" class="text-blue-600 font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                            View Detail <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-slate-900 text-slate-300 py-16 text-center border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-6">Let's Create Together</h2>
+            <p class="mb-8 max-w-md mx-auto">Terbuka untuk kolaborasi, proyek freelance, atau diskusi mengenai inovasi digital dan AI.</p>
+            
+            <div class="flex items-center justify-center gap-4 mb-12">
+                <a href="mailto:cheviorenza@gmail.com" class="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 rounded-full text-white font-medium transition-colors">
+                    <i data-lucide="mail" class="w-5 h-5"></i> cheviorenza@gmail.com
+                </a>
+            </div>
+            
+            <div class="flex flex-wrap items-center justify-center gap-6 mb-12">
+                <a href="https://www.linkedin.com/in/chevira-fiorenza-yuvisena" target="_blank" class="hover:text-slate-300 text-white transition-colors"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+                <a href="https://www.instagram.com/cheviorenza/" target="_blank" class="hover:text-slate-300 text-white transition-colors"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                <a href="https://www.tiktok.com/@checeviorenza" target="_blank" class="hover:text-slate-300 text-white transition-colors">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M19.589 6.686a4.793 4.793 0 0 1-3.97-1.539 4.99 4.99 0 0 1-1.534-3.524H10.07v14.4c0 1.956-1.59 3.543-3.546 3.543s-3.545-1.587-3.545-3.543 1.59-3.544 3.545-3.544c.4 0 .783.07 1.144.195V8.583a7.56 7.56 0 0 0-1.144-.087c-4.172 0-7.558 3.385-7.558 7.557s3.386 7.558 7.558 7.558 7.558-3.386 7.558-7.558V9.351c2.193 1.588 4.887 2.457 7.763 2.502V7.83a8.814 8.814 0 0 0-2.256-.144z"/></svg>
+                </a>
+                <a href="https://www.behance.net/chevirafiorenza" target="_blank" class="hover:text-slate-300 text-white transition-colors">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M8.5 7.5h-4v9h4c1.7 0 3-1.1 3-2.5 0-1.1-.7-2-1.8-2.3 1-.4 1.6-1.3 1.6-2.4C11.3 8.3 10.1 7.5 8.5 7.5zm-1.5 3.5h-1v-2h1c.6 0 1 .4 1 1s-.4 1-1 1zm.5 4h-1.5v-2.5h1.5c.8 0 1.2.5 1.2 1.2s-.4 1.3-1.2 1.3zm8-5h-3v1.5h3v-1.5zm.5 3.5h-3.5v1.5h3c.2 0 .5-.2.5-.5v-1h-4v4h4.5c1.4 0 2.5-1.1 2.5-2.5s-1.1-2.5-2.5-2.5z"/></svg>
+                </a>
+                <a href="https://dapoernayas.my.canva.site/portfolio-cheviorenza" target="_blank" class="flex items-center gap-2 text-white hover:text-slate-300 transition-colors">
+                    <i data-lucide="external-link" class="w-5 h-5"></i> <span class="text-sm font-medium hidden sm:inline">Visual Portfolio</span>
+                </a>
+            </div>
+
+            <div class="text-sm text-slate-500 flex flex-col md:flex-row items-center justify-center gap-4">
+                <span>© 2026 Chevira Fiorenza Yuvisena. All rights reserved.</span>
+                <span class="hidden md:inline">•</span>
+                <span>Designed with ✨ for Digital Impact</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Logic Scripts -->
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Sticky Navbar Effect
+        const nav = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-white/80', 'backdrop-blur-md', 'shadow-sm', 'py-3');
+                nav.classList.remove('bg-transparent', 'py-5');
+            } else {
+                nav.classList.add('bg-transparent', 'py-5');
+                nav.classList.remove('bg-white/80', 'backdrop-blur-md', 'shadow-sm', 'py-3');
+            }
+        });
+
+        // Smooth Scroll
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) element.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Handle Image Upload (Preview)
+        const uploadInput = document.getElementById('imageUpload');
+        const profileImg = document.getElementById('profileImg');
+        const emptyState = document.getElementById('emptyState');
+
+        uploadInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onloadend = () => {
+                    profileImg.src = reader.result;
+                    profileImg.classList.remove('hidden');
+                    emptyState.classList.add('hidden');
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Portfolio Tabs Filtering
+        const tabs = document.querySelectorAll('.tab-btn');
+        const items = document.querySelectorAll('.portfolio-item');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Reset tab styles
+                tabs.forEach(t => {
+                    t.classList.remove('bg-blue-600', 'text-white', 'shadow-md');
+                    t.classList.add('text-slate-500', 'hover:text-slate-800');
+                });
+                // Activate clicked tab
+                tab.classList.remove('text-slate-500', 'hover:text-slate-800');
+                tab.classList.add('bg-blue-600', 'text-white', 'shadow-md');
+
+                const filter = tab.getAttribute('data-filter');
+
+                // Filter Items
+                items.forEach(item => {
+                    if (filter === 'All' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
